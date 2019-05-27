@@ -1,0 +1,48 @@
+---
+title: "Peer-graded Assignment: Final Project Submission"
+author: "Atasie Diana"
+date: "5/27/2019"
+output: slidy_presentation
+---
+
+```{r , echo=FALSE}
+library(knitr)
+```
+
+## General Information
+
+The goal of this project is to use a prediction algorithm that I have built and an interface that can be accessed easily by others. For this I have to realize:
+
+- A slide deck consisting of no more than 5 slides created with R Studio Presenter pitching my algorithm and app as if you were presenting to your boss or an investor.
+- A Shiny app (https://diana25.shinyapps.io/Final_week7/) that takes as input a phrase (multiple words) in a text box input and outputs a prediction of the next word.
+
+## Packages used
+
+- readr
+- stringi
+- stringr
+- tidytext
+- janeaustenr
+- dplyr
+- readr
+- tidytext
+- textreadr
+
+## Data used
+
+I used the website https://www.nytimes.com/interactive/2017/06/23/opinion/trumps-lies.html for the prediction algorithm.
+
+```{r , echo = TRUE}
+ library(textreadr)
+    webpage <- read_html("https://www.nytimes.com/interactive/2017/06/23/opinion/trumps-lies.html")
+    webpage[c(2,3)]
+```
+
+## Short Description of the algorithm
+
+- I used the unnest_tokens function and count function to see which ngrams are more frequent.
+- I used the ngram more frequent, where our input appears, as result.
+If you want to see the code, you can access the code on https://github.com/DianaAtasie/Final
+
+
+
