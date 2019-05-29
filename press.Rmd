@@ -40,9 +40,12 @@ I used the website https://www.nytimes.com/interactive/2017/06/23/opinion/trumps
 
 ## Short Description of the algorithm
 
-- I used the unnest_tokens function and count function to see which ngrams are more frequent.
-- I used the ngram more frequent, where our input appears, as result.
-If you want to see the code, you can access the code on https://github.com/DianaAtasie/Final
+- I used the unnest_tokens function and count function to see which ngrams are more frequent.When someone write a word, the app shows the next word from the more frequent ngrams containning typing word.
+- If you type a SPACE, you will receive the message: Type the new word, because the SPACE means that you want to add a new word.
+- If we don't have in the database the typing word you will receive an error message.
+- If you want to see the code, you can access the code on https://github.com/DianaAtasie/Final
+![width](C:\\Users\\daatas\\Desktop\\New folder\\capture.PNG)
+
 
 
 
